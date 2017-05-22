@@ -28,6 +28,9 @@
 Install NPM:
 1. npm install express --save 
 2. npm install socket.io 'https://www.npmjs.com/package/socket.io'
+3. npm install expect 
+4. npm install mocha
+5. npm install nodemon
 
 
 
