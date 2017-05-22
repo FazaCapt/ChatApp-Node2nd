@@ -39,3 +39,11 @@ Documentation:
 1. PathJoin: 'https://nodejs.org/api/path.html#path_path_join_paths'
 2. socket.io 'https://socket.io/docs/#'
 3. module Socket.io: 'http://localhost:3000/socket.io/socket.io.js'
+4. geolocations: 'https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation'
+
+
+Pembahasan:
+1. JQuery 
+    -  perpustakaan JavaScript yang cepat, kecil, dan kaya fitur. 
+    - Itu membuat hal-hal seperti traversal dan manipulasi dokumen HTML, penanganan event, animasi, dan Ajax lebih sederhana dengan API yang mudah digunakan yang bekerja di banyak browser. 
+    - Jika Anda baru mengenal jQuery, sebaiknya periksa Pusat Pembelajaran jQuery. 'http://learn.jquery.com/'
