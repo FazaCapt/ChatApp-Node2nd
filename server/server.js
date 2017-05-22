@@ -14,16 +14,34 @@ var io = socketIO(server);
 
 app.use(express.static(publicPath));
 
-io.on('connection', (socket) => {
+io.on('connection', function(socket) {
     console.log('New user connected');
 
-    socket.on('disconnect', () => {
+    socket.emit('newMessage', {
+        from: 'Sydney',
+        text: 'Jalan-jalan yuk ke austarlia',
+        createAt: 123
+    });
+
+
+    // socket.emit('newEmail', {
+    //     from: 'officiallFaza@gmail.com',
+    //     text: 'ini pesan buat faza',
+    //     createAt: 2234
+    // });
+
+    socket.on('createMessage', (message) => {
+        console.log('createMessage', message);
+    });
+
+    // socket.on('createEmail', (newEmail) => {
+    //     console.log('createEmail', newEmail);
+    // });
+
+    socket.on('disconnect', function() {
         console.log('User was disconnected');
     });
 });
-
-
-
 
 server.listen(3000, () => {
     console.log(`Server is up on port ${port}`);
