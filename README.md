@@ -43,6 +43,7 @@ Documentation:
 4. geolocations: 'https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation'
 5. Date MDN: 'https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date'
 6. momentJS: 'https://momentjs.com/docs/'
+7. mustache.js : 'https://www.npmjs.com/package/mustache' || 'https://github.com/janl/mustache.js'
 
 
 Pembahasan:
