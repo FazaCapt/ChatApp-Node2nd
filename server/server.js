@@ -17,26 +17,30 @@ app.use(express.static(publicPath));
 io.on('connection', function(socket) {
     console.log('New user connected');
 
+    // U/ tampilan pertama kali masuk
     socket.emit('newMessage', {
-        from: 'Sydney',
-        text: 'Jalan-jalan yuk ke austarlia',
-        createAt: 123
+        from: 'Admin',
+        text: 'Welcome to the chat App',
+        createdAt: new Date().getTime()
+    });
+    // ini u/ bila ada user masuk
+    socket.broadcast.emit('newMessage', {
+        from: 'Admin',
+        text: 'New user joined',
+        createdAt: new Date().getTime()
     });
 
-
-    // socket.emit('newEmail', {
-    //     from: 'officiallFaza@gmail.com',
-    //     text: 'ini pesan buat faza',
-    //     createAt: 2234
-    // });
-
+    // ini buat pesan baru
     socket.on('createMessage', (message) => {
         console.log('createMessage', message);
-    });
 
-    // socket.on('createEmail', (newEmail) => {
-    //     console.log('createEmail', newEmail);
-    // });
+        // ini buat models pesan
+        io.emit('newMessage', {
+            from: message.from,
+            text: message.text,
+            createAt: new Date().getTime()
+        });
+    });
 
     socket.on('disconnect', function() {
         console.log('User was disconnected');
@@ -46,13 +50,3 @@ io.on('connection', function(socket) {
 server.listen(3000, () => {
     console.log(`Server is up on port ${port}`);
 })
-
-
-
-
-
-
-// console.log(__dirname + '/../public');
-// // Output: 
-// // /Users/fazafahamsyah/Desktop/node-chat-app/server./../public
-// console.log(publicPath);
