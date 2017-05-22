@@ -11,7 +11,7 @@
 9. Message Form & jQuery 17:48
 10. Geolocation Part I 14:50
 11. Geolocation Part II 17:38
-12. Styling The Chat Page 17:19
+12. Styling The Chat Page 17:19 'https://gist.github.com/andrewjmead/4783dec59ba2d1e5bcf3e1c301c5858d#file-styles-css'
 13. Timestamps and Formatting with Moment 17:57
 14. Printing Message Timestamps 9:46
 15. Moustache.js 15:55
@@ -31,6 +31,7 @@ Install NPM:
 3. npm install expect 
 4. npm install mocha
 5. npm install nodemon
+6. npm install moment 'https://www.npmjs.com/package/moment'
 
 
 
@@ -40,6 +41,8 @@ Documentation:
 2. socket.io 'https://socket.io/docs/#'
 3. module Socket.io: 'http://localhost:3000/socket.io/socket.io.js'
 4. geolocations: 'https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation'
+5. Date MDN: 'https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date'
+6. momentJS: 'https://momentjs.com/docs/'
 
 
 Pembahasan:
