@@ -44,6 +44,8 @@ Documentation:
 5. Date MDN: 'https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date'
 6. momentJS: 'https://momentjs.com/docs/'
 7. mustache.js : 'https://www.npmjs.com/package/mustache' || 'https://github.com/janl/mustache.js'
+8. deparam-andrew: 'https://gist.github.com/andrewjmead/b71e03d8df237983285892f9a265d401'
+9. chat-css-andrew: 'https://gist.github.com/andrewjmead/4783dec59ba2d1e5bcf3e1c301c5858d'
 
 
 Pembahasan:
