@@ -22,6 +22,7 @@ describe('isRealString', () => {
     it('should allow string with non-space character', () => {
         var res = isRealString('  faza  ');
 
+
         expect(res).toBe(true);
     });
 })
